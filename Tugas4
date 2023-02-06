@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "e5dbf0bc-26cf-4c7b-a367-da32f1bdfc43",
+		"name": "Tugas4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13970445"
+	},
+	"item": [
+		{
+			"name": "home",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "html"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staging.engineer.ai/home/",
+					"protocol": "https",
+					"host": [
+						"staging",
+						"engineer",
+						"ai"
+					],
+					"path": [
+						"home",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://staging.engineer.ai/home/register",
+					"protocol": "https",
+					"host": [
+						"staging",
+						"engineer",
+						"ai"
+					],
+					"path": [
+						"home",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Wulansyah\",\r\n    \"last_name\": \"\",\r\n    \"email\": \"caption1@gmail.com\",\r\n    \"phone_number\": \"+62-8755723454\",\r\n    \"password\": \"kami2111993\",\r\n    \"currency_id\": 2,\r\n    \"user_type\": \"User\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-staging-builder.engineer.ai/users",
+					"protocol": "https",
+					"host": [
+						"api-staging-builder",
+						"engineer",
+						"ai"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
